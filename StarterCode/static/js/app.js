@@ -108,15 +108,16 @@ function resetPlots(samples,id=0) {
 
 function resetInfo(info,id=0) {
     // Reseting Info //
-    
+
     tb = d3.select('.panel-body')
-    lines = tb.html(`id: ${info[id]['id']}<br>
-    ethnicity: ${info[id]['ethnicity']}<br>
-    gender: ${info[id]['gender']}<br>
-    age: ${info[id]['age']}<br>
-    location: ${info[id]['location']}<br>
-    bbtype: ${info[id]['bbtype']}<br>
-    wfreq: ${info[id]['wfreq']}`)
+    lines = tb.html(
+        `Id: ${info[id]['id']}<br>
+    Ethnicity: ${info[id]['ethnicity']}<br>
+    Gender: ${info[id]['gender']}<br>
+    Age: ${info[id]['age']}<br>
+    Location: ${info[id]['location']}<br>
+    Bbtype: ${info[id]['bbtype']}<br>
+    Wfreq: ${info[id]['wfreq']}`)
     lines.style('font-size','90%')
 
 };
